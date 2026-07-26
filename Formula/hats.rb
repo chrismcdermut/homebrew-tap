@@ -5,21 +5,21 @@
 class Hats < Formula
   desc "Identity profiles for agents and shells"
   homepage "https://github.com/chrismcdermut/hats"
-  version "0.5.5"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chrismcdermut/hats/releases/download/v0.5.5/hats_0.5.5_darwin_amd64.tar.gz"
-      sha256 "8858f67f01c059bbdd2f8257b720f06a2faba3794609b4943eb6f7fcc01eb276"
+      url "https://github.com/chrismcdermut/hats/releases/download/v0.6.0/hats_0.6.0_darwin_amd64.tar.gz"
+      sha256 "126c173cfe83253c53055871781c3e1367f3605f45f042f0d9ea14a2f5e83f28"
 
       define_method(:install) do
         bin.install "hats"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chrismcdermut/hats/releases/download/v0.5.5/hats_0.5.5_darwin_arm64.tar.gz"
-      sha256 "2394f0d273090cdebff69263b569c210bea63ed4fc3a8d8774e13aee615526ff"
+      url "https://github.com/chrismcdermut/hats/releases/download/v0.6.0/hats_0.6.0_darwin_arm64.tar.gz"
+      sha256 "9123f282658a1203b82229aa98aa003056209abd068987ab8f1b60ab767ac356"
 
       define_method(:install) do
         bin.install "hats"
@@ -29,15 +29,15 @@ class Hats < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrismcdermut/hats/releases/download/v0.5.5/hats_0.5.5_linux_amd64.tar.gz"
-      sha256 "53b0f28503fa891f720ebdd8d3a07c62caea518ddbb3613113b8c0f198f1b441"
+      url "https://github.com/chrismcdermut/hats/releases/download/v0.6.0/hats_0.6.0_linux_amd64.tar.gz"
+      sha256 "8f5609317266047a028e437b38801bc3a9fc146d3faab19756223b6714d241ac"
       define_method(:install) do
         bin.install "hats"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrismcdermut/hats/releases/download/v0.5.5/hats_0.5.5_linux_arm64.tar.gz"
-      sha256 "f51404568ff89241038d1a61bf853eeb04d0a710d8af5eee87e7a83f845213ca"
+      url "https://github.com/chrismcdermut/hats/releases/download/v0.6.0/hats_0.6.0_linux_arm64.tar.gz"
+      sha256 "b48c0e3e4b6147467e187fc242199ba4a2e5383644f6f0db361e1e2a6f884ab5"
       define_method(:install) do
         bin.install "hats"
       end
